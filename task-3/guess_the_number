@@ -1,1 +1,10 @@
-
+import random 
+print("GUESSING THE NUMBER")
+random_number=random.randint(1,500)
+number=int(input("Enter random number between 1 and 500:"))
+if number<random_number:
+    print("Too Low Better Luck Next Time") 
+elif number>random_number:
+    print("Too High Try Again") 
+else:
+    print("Congrats Your Guess Was Right")
